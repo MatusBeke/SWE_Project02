@@ -2,40 +2,109 @@
 <html lang="sk">
 <head>
     <meta charset="UTF-8">
-    <title>Matúš Beke - O mne</title>
+    <title>Matúš Beke - Portfólio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="hlavicka">
         <div class="logo">Matúš Beke</div>
         <div class="menu">
-            <a href="index.html">O mne</a>
-            <a href="projekty.html">Projekty</a>
-            <a href="kontakt.html">Kontakt</a>
+            <a href="#omne">O mne</a>
+            <a href="#projekty">Projekty</a>
+            <a href="#kontakt">Kontakt</a>
         </div>
-        <a class="tlacidlo-hire" href="kontakt.html">Napíš mi &raquo;</a>
+        <a class="tlacidlo-hire" href="#kontakt">Napíš mi &raquo;</a>
     </div>
 
-<div class="hero">
-    <div class="text-vlavo">
-        <h1>Ahoj! Som<br><span>Matúš Beke</span></h1>
-        <p class="popis-text">
-            Som študentom druhého ročníka na SPŠ IT a G v Kysuckom Novom Meste. 
-            Moja cesta za programovaním začala zvedavosťou a dnes sa naplno venujem 
-            tvorbe webových aplikácií a vývoju 2D hier. V mojom kóde sa stretáva 
-            logika Pythonu s kreativitou CSS a JavaScriptu.
-        </p>
-        <p class="popis-text">
-            Okrem vývoja softvéru ma fascinuje hardware a sieťové technológie. 
-            Mimo klávesnice rád trávim čas v prírode na túrach alebo ponorený 
-            do sveta videohier, ktoré sú mojou najväčšou inšpiráciou. 
-            Verím, že každý kód má mať svoj zmysel a každý projekt je novou 
-            príležitosťou naučiť sa niečo prevratné.
-        </p>
+    <div id="omne" class="hero">
+        <div class="tvar tvar1"></div>
+        <div class="tvar tvar2"></div>
+        <div class="tvar tvar3"></div>
+        <div class="tvar tvar4"></div>
+        <div class="tvar tvar5"></div>
+
+        <div class="text-vlavo">
+            <h1>Ahoj! Som<br><span>Matúš Beke</span></h1>
+            <p class="popis-text">
+                Som študentom druhého ročníka na SPŠ IT a G v Kysuckom Novom Meste. 
+                Moja cesta za programovaním začala zvedavosťou a dnes sa naplno venujem 
+                tvorbe webových aplikácií a vývoju 2D hier. V mojom kóde sa stretáva 
+                logika Pythonu s kreativitou CSS a JavaScriptu.
+            </p>
+            <p class="popis-text">
+                Okrem vývoja softvéru ma fascinuje hardware a sieťové technológie. 
+                Mimo klávesnice rád trávim čas v prírode na túrach alebo ponorený 
+                do sveta videohier, ktoré sú mojou najväčšou inšpiráciou. 
+                Verím, že každý kód má mať svoj zmysel a každý projekt je novou 
+                príležitosťou naučiť sa niečo prevratné.
+            </p>
+            
+            <div class="zrucnosti">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>Pygame</span>
+                <span>Photoshop</span>
+            </div>
+        </div>
+        <div class="foto-vpravo">
+            <img src="MatusBeke.png" alt="Matúš Beke">
+        </div>
     </div>
-    <div class="foto-vpravo">
-        <img src="MatusBeke.png" alt="Matúš Beke">
+
+    <div id="projekty" class="sekcia">
+        <h2 class="sekcia-nadpis">Moje projekty</h2>
+        
+        <div class="projekt-row" style="background-image: url('TAVERNSANDCASTLES.png');">
+            <div class="overlay-obsah">
+                <div class="overlay-text">TavernsAndCastles</div>
+                <div class="overlay-popis">Top-down RTS hra, kde je všetka grafika ručne kreslená nami.</div>
+            </div>
+            <a href="https://matusbeke.github.io/TavernsAndCastles/" target="_blank" class="overlay-link">Odkaz</a>
+        </div>
+
+        <div class="projekt-row" style="background-image: url('JanosikTheGame.png');">
+            <div class="overlay-obsah">
+                <div class="overlay-text">Janosik The Game</div>
+                <div class="overlay-popis">Moja prvá hra v konzole. Skvelá výzva na precvičenie logiky.</div>
+            </div>
+            <a href="https://github.com/jakubtatar/JTG" target="_blank" class="overlay-link">Odkaz</a>
+        </div>
+
+        <div class="projekt-row" style="background-image: url('DZEMOVICA.png');">
+            <div class="overlay-obsah">
+                <div class="overlay-text">Dzemovica-Gamejam</div>
+                <div class="overlay-popis">Vyhrali sme cenu za najlepšiu hru na gamejame. Všetko sme si sami nakreslili.</div>
+            </div>
+            <a href="https://smthstudios.itch.io/the-pit-you-dig" target="_blank" class="overlay-link">Odkaz</a>
+        </div>
+
+        <div class="projekt-row" style="background-image: url('BEKESTAV.png');">
+            <div class="overlay-obsah">
+                <div class="overlay-text">Bekestav</div>
+                <div class="overlay-popis">Prezentačná webová stránka vytvorená pre stavebnú firmu.</div>
+            </div>
+            <a href="https://matusbeke.github.io/SWE_Project01/" target="_blank" class="overlay-link">Odkaz</a>
+        </div>
     </div>
-</div>
+
+    <div id="kontakt" class="sekcia sekcia-kontakt">
+        <h2 class="sekcia-nadpis">Kontaktuj ma</h2>
+        <div class="kontakt-obal">
+            <div class="kontakt-karta">
+                <h3>Email</h3>
+                <a href="mailto:matus.beke7@gmail.com">matus.beke7@gmail.com</a>
+            </div>
+            <div class="kontakt-karta">
+                <h3>Telefón</h3>
+                <p>+421 903 844 400</p>
+            </div>
+            <div class="kontakt-karta">
+                <h3>GitHub</h3>
+                <a href="https://github.com/MatusBeke" target="_blank">github.com/MatusBeke</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
